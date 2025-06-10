@@ -1,0 +1,49 @@
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100;
+  border: none;
+  background-color: #d62828;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+.backToTop:hover {
+  background-color: #b22222;
+}
+
+.backToTop i {
+  font-size: 18px;
+}
+.back-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-top: 2px solid #ccc;
+  padding-top: 1.5rem;
+}
+
+.backToTop {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid var(--karnataka-red);
+  background-color: white;
+  color: var(--karnataka-red);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.backToTop:hover {
+  background-color: var(--karnataka-red);
+  color: white;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karunadu Green SuperMart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="grains.css">
+  <link rel="stylesheet" href="oil.css">
+  <link rel="stylesheet" href="gotop.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS (for toggler to work) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <style>
+    :root {
+      --primary: #ffb400;
+      --accent: #8b0000;
+      --bg-dark: #fcbf49;
+      --bg-light: #f5f5f5;
+      --karnataka-red: #d62828;
+      --karnataka-yellow: #fcbf49;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('karnataka-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+
+    header {
+      background: linear-gradient(to right, var(--karnataka-yellow), var(--karnataka-red));
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #b22222;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+
+
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--karnataka-yellow);
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: var(--karnataka-yellow);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 1rem auto;
+      border-radius: 20px;
+      max-width: 1300px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    section h2 {
+        color: var(--accent);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        }
+
+    footer {
+      text-align: center;
+      background-color: #1c1c1c;;
+      color: #ccc;
+      padding: 1rem;
+      font-size: 0.9rem;
+      
+    }
+    footer a {
+      color: white;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--karnataka-yellow); /* or any color you prefer */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/headlogo.jpg" alt="Karunadu Logo" />
+    <!-- <h1>ಕರುನಾಡು ಗ್ರೀನ್ ಸೂಪರ್‌ಮಾರ್ಟ್</h1> -->
+    <h1>Karunadu Green SuperMart</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">Karnunadu Green</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="#Grains">Grains</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#FMCG">FMCG</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#Oils">Oils</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#Cosmetics">Cosmetics</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#FruitsVegs">Fruits & Vegetables</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#DryFruits">DryFruits</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <style>
+    .custom-navbar {
+      background-color: #b22222;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .navbar-brand {
+      color: white !important;
+    }
+  </style>
+
+  
+  <!-- Bootstrap JS (for toggle to work) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <p style="text-align: center;">High-quality Grains, FMCG, Oils, Cosmetics, Fruits & Vegetables, Dry Fruits sourced from trusted Karnataka farmers and distributers.</p>
+  <section id="Grains">
+    <h2>Grains & Pulses</h2>
+    <div class="grains-gallery">
+    <div><img src="https://www.peatplantin.com/img/rice/ir64.jpg" alt="Rice"><p>Rice</p></div>
+    <div><img src="https://cpimg.tistatic.com/06453432/b/4/Pure-Wheat.jpg" alt="Wheat"><p>Wheat</p></div>
+    <div><img src="https://5.imimg.com/data5/SELLER/Default/2023/10/349459241/VE/NT/EE/233472/yellow-toor-dal-1000x1000.jpg" alt="Dal"><p>Dal</p></div>
+    <div><img src="https://m.media-amazon.com/images/I/919VDk6WrbL._SX679_.jpg" alt="Rajma"><p>Rajma</p></div>
+    <div><img src="images/Maize.jpg" alt="Barley"><p>Barley</p></div>
+    <div><img src="https://2.wlimg.com/product_images/bc-full/2019/7/5424874/whole-green-gram-1563944964-5012559.jpeg" alt="Green Moong Dal"><p>Green Moong Dal</p></div>
+    <div><img src="https://static.toiimg.com/photo/93307960.cms" alt="Raagi"><p>Raagi</p></div>
+    <div><img src="https://th.bing.com/th/id/OIP.EjTEL5nAyBDYCcxUdkkVYAHaE8?rs=1&pid=ImgDetMain" alt="Ground Nuts"><p>Ground Nuts</p></div>
+    <div><img src="https://th.bing.com/th/id/OIP.zlwE2uVq7U39CmzE9y5bIgHaHs?w=674&h=700&rs=1&pid=ImgDetMain" alt="Uddin Bele"><p>Uddin Bele</p></div>
+    <div><img src="https://rakskitchen.net/wp-content/uploads/2010/12/roasted-rava.jpg" alt="Rava"><p>Rava</p></div>
+    <div><img src="https://image.shutterstock.com/image-photo/vigna-unguiculata-scientific-name-cowpea-260nw-749001214.jpg" alt="Alsandi Kalu"><p>Alsandi Kalu</p></div>
+    <div><img src="https://img2.exportersindia.com/product_images/bc-full/2020/2/3185715/horse-gram-1581506167-5295988.jpeg" alt="Urali Kalu"><p>Urali Kalu</p></div>
+    <div><img src="https://www.harmonyhousefoods.com/assets/images/Freeze_Dried_Green_Peas_Jar%202.jpg" alt="Peas"><p>Peas</p></div>
+    <div><img src="https://th.bing.com/th/id/OIP.-Zk8P19DiMunBa-MrFhA5QHaHa?rs=1&pid=ImgDetMain" alt="Kadle kaalu"><p>Kadle kaalu</p></div>
+    <div><img src="https://thumbs.dreamstime.com/b/pile-heap-yellow-color-raw-hesaru-bele-moong-dal-isolated-white-background-yellow-color-raw-hesaru-bele-moong-dal-181535764.jpg" alt="Hesaru Bele"><p>Hesaru Bele</p></div>
+    
+    <!-- Add more images as needed -->
+  </div>
+  </section>
+
+<button id="topGrains" class="backToTop" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<section id="FMCG">
+    <h2>FMCG Products</h2>
+    <div class="grains-gallery">
+       <div><img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/05/chips-2.jpg?quality=82&strip=1&resize=1920,1080" alt="Snacks"><p>Snacks</p></div>
+       <div><img src="https://i.etsystatic.com/23706432/r/il/753904/2514202244/il_fullxfull.2514202244_gkbt.jpg" alt="Candies"><p>Candies</p></div>
+       <div><img src="https://img3.exportersindia.com/product_images/bc-full/dir_109/3248769/stationary-items-1427777.jpg" alt="Stationary"><p>Stationary</p></div>
+       <div><img src="https://st2.depositphotos.com/1177973/11352/i/950/depositphotos_113527126-stock-photo-collection-of-different-spices.jpg" alt="Masala"><p>Masala</p></div>
+    </div>
+</section>
+
+<button id="topFMCG" class="backToTop" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+  <section id="Oils">
+    <h2>Oils</h2>
+    <h3>Food Oil</h3>
+    <div class="Oils-gallery">
+       <div><img src="https://cdn.shopify.com/s/files/1/0434/5475/9072/products/GO-091_clipped_rev_1_copy_72ff3234-2385-4d2a-8aa4-802a920279dc.jpg?v=1628237716" alt="Snacks"><p>Sunflower</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.fhh2tHI3gLv8BtZG7rI5lAHaHa?rs=1&pid=ImgDetMain" alt="Candies"><p>Freedom</p></div>
+       <div><img src="https://kaleesuwari.com/storage/products/11/Gold-Winner-Packs_5ltr-Front-min.png" alt="Stationary"><p>Goldwinner</p></div>
+       <div><img src="https://images-na.ssl-images-amazon.com/images/I/71QH8K8%2BEsL._SL1500_.jpg" alt="Stationary"><p>Fortune</p></div>
+       <div><img src="https://cdn0.woolworths.media/content/wowproductimages/large/234923.jpg" alt="Masala"><p>Rice brain Oil</p></div>
+    </div>
+    <h3>Hair Oil</h3>
+    <div class="Oils-gallery">
+       <div><img src="https://tiimg.tistatic.com/fp/1/006/040/mustard-oil-548.jpg" alt="Masala"><p>Mustord oil</p></div>
+       <div><img src="https://lzd-img-global.slatic.net/g/p/63445f4e6df4ffd328bf272d38d91deb.jpg_720x720q80.jpg" alt="Candies"><p>Parachut Oil</p></div>
+       <div><img src="https://www.spiceography.com/wp-content/uploads/2020/10/Almond-Oil.jpg" alt="Candies"><p>Almond Oil</p></div>
+       <div><img src="https://5.imimg.com/data5/SELLER/Default/2023/11/360840024/NV/LV/OD/2898901/900ml-shiva-shakthi-pancha-deepam-pooja-oil-1000x1000.jpeg" alt="Snacks"><p>Shakthi Gold</p></div>
+       <div><img src="https://i.etsystatic.com/14696771/r/il/5d456a/2050734249/il_1080xN.2050734249_s8v6.jpg" alt="Stationary"><p>Aloe Oil</p></div>
+    </div>
+    <h3>Deepa Oil</h3>
+    <div class="Oils-gallery">
+       <div><img src="https://tiimg.tistatic.com/fp/1/008/064/kachchi-ghani-1-l-shree-gayatri-mustard-oil-936.jpg" alt="Snacks"><p>Gayitri Oil</p></div>
+       <div><img src="https://m.media-amazon.com/images/I/61fi5th6EAL._SL1500_.jpg" alt="Stationary"><p>Deepam Oil</p></div>
+       <div><img src="https://5.imimg.com/data5/CH/KA/MY-26868723/a-1000x1000.png" alt="Snacks"><p>Shakthi Gold</p></div>
+    </div>
+  </section>
+  <button id="topOils" class="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <section id="Cosmetics">
+    <h2>Cosmetics</h2>
+    <div class="grains-gallery">
+       <div><img src="https://th.bing.com/th/id/OIP.lS4z6KXN2QC_IGFkR1mTDwHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Snacks"><p>Lipsticks</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.jvTZeqY6IdFWUYoWol4XUwHaFf?w=242&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Candies"><p>Foundations</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.0wzrXVJGSN03J38hDkaZKQHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Stationary"><p>Blushes</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.pOw7Z8q4ir9AWxYyij5fogHaEK?w=261&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Masala"><p>Concealers</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.s8J6fGItrgJkjftDFJsWJAHaHF?w=181&h=186&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Snacks"><p>Nyle Polish </p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.qBU4vgWCqRIbppVOZWI6ogHaIW?w=155&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Candies"><p>Body loation</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.p4-QN76hw_uP9lqLRS8kmQHaHa?w=199&h=200&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Stationary"><p>Shampoo</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.EsmUPdUR5qBhwyXkTJsHNwHaHa?w=206&h=206&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Masala"><p>Hair Accessories</p></div>
+    </div>
+    </section>
+    <button id="topCasmetics" class="backToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <section id="FruitsVegs">
+    <h2>Fruits and Vegetables</h2>
+    <h3>Fruits</h3>
+    <div class="grains-gallery">
+       <div><img src="https://static.toiimg.com/photo/93205748.cms" alt="Banana"><p>Banana</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.phZZKqL8CB8l9jMmVp4_BAHaE8?rs=1&pid=ImgDetMain" alt="Papaya"><p>Papaya</p></div>
+       <div><img src="https://images2.alphacoders.com/719/thumb-1920-719435.jpg" alt="Apple"><p>Apple</p></div>
+       <div><img src="https://images6.alphacoders.com/368/368747.jpg" alt="Grapes"><p>Grapes</p></div>
+    </div>
+    <h3>Vegetables</h3>
+    <div class="grains-gallery">
+       <div><img src="https://th.bing.com/th/id/R.557f9f46ba274c0d0a575a6e5777ef90?rik=UGaol2nVTkNHHw&riu=http%3a%2f%2fharvestfarmofwhately.com%2fwp-content%2fuploads%2f2018%2f04%2fRed-Onion.jpeg&ehk=J6axA%2bwyjx4yUeYJRfJREuCCe3Yamc7smo5NuxxePSk%3d&risl=1&pid=ImgRaw&r=0" alt="Onion"><p>Onion</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.LIE5f1qGkJxfhTAAf5J4kwHaE8?rs=1&pid=ImgDetMain" alt="Garlic"><p>Garlic</p></div>
+    </div>
+    </section>
+    <button id="topFruitsVegs" class="backToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <section id="DryFruits">
+    <h2>Dry Fruits</h2>
+    <div class="grains-gallery">
+       <div><img src="https://cdn.britannica.com/04/194904-050-1B92812A/Raw-Food-Almond-food-Nut-Snack.jpg" alt="Almonds"><p>Almond</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.2xisxG_EuH6J6mtlvcgQlwHaHa?rs=1&pid=ImgDetMain" alt="Cashews"><p>Cashews</p></div>
+       <div><img src="https://th.bing.com/th/id/OIP.oVJcvVlKMIGJGsGwXSvulwHaKe?w=2000&h=2829&rs=1&pid=ImgDetMain" alt="Walnuts"><p>Walnuts</p></div>
+       <div><img src="https://cdn.britannica.com/76/196076-050-6138D55B/pistachios.jpg" alt="Pistachios"><p>Pistachios</p></div>
+       <div><img src="https://sodelicious.recipes/wp-content/uploads/2018/08/types-of-raisins-e1533733537634.jpg" alt="Raisins"><p>Raisins</p></div>
+       <div><img src="https://www.tasteofhome.com/wp-content/uploads/2023/01/GettyImages-1293654951-e1674252263498.jpg" alt="Dates fruit"><p>Dates fruit</p></div>
+    </div>
+    </section>
+    <button id="topCasmetics" class="backToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+  <footer>
+    &copy; 2025 Karunadu Green SuperMart <br> 
+    Chitradurga, Karnataka <br><br>
+    <div style="text-align: center;"></div>
+      <p> Click the below links to visit our Karunadu Green SuperMart.</p>
+      <a href="https://www.instagram.com/karnadu_green_mart" target="blank" style="color: white; margin: 0 15px;">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      
+      <a href="https://www.google.com/search?client=ms-android-oppo-rvo3&sca_esv=cf094a35ddef2203&sxsrf=AE3TifPDeQaJQkI53zwnjTFqbpg7L3xtIQ%3A1749532256012&kgmid=%2Fg%2F11wttlp4k5&q=KARUNADU%20GREEN&shndl=30&shem=lspt9&source=sh%2Fx%2Floc%2Fact%2Fm4%2F2#ebo=0" target="_blank">
+        <i class="fab fa-google fa-2x"></i>
+      </a>
+      <a href="https://wa.me/916360541435" target="blank" style="color: white; margin: 0 15px;">
+        <i class="fab fa-whatsapp fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+
+<script src="gotop.js"></script>
+</body>
+</html>
